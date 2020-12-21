@@ -6,15 +6,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
+
 @RestController
 @SpringBootApplication
 public class DemoApplication {
 
 	@RequestMapping( path ="/")
 	String home(){
-		return "hello world";
+		return "hello world 222";
 	}
 
+	@RequestMapping(path = "/wkwk")
+	String wkwk(){
+		return "wkwkwkwkwwkwk";
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
